@@ -49,7 +49,7 @@ This project implements the **Retinex-Based Laplacian Pyramid Method for Image D
 ### How to Use
 
 #### Running the Defogging Script
-- **Update** the `image_path` in `defog.py` to point to your target image.
+- **Update** the `image_path` in `retinex_demo.py` to point to your target image.
 - **Execute** the script:
   ```bash
   python defog.py
