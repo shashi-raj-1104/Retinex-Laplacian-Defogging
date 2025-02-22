@@ -24,9 +24,6 @@ This project implements the **Retinex-Based Laplacian Pyramid Method for Image D
 - **Jupyter Notebook (`notebook.ipynb`):**  
   Provides a step-by-step demonstration and explanation of the defogging process.
 
-- **Example Output (`output.png`):**  
-  A sample image showcasing the defogging results.
-
 ---
 
 ### Installation & Setup
