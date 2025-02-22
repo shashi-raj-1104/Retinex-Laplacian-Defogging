@@ -37,7 +37,7 @@ This project implements the **Retinex-Based Laplacian Pyramid Method for Image D
 2. **Clone the Repository:**  
    Run the following commands in your terminal:
    ```bash
-   git clone https://github.com/your-username/retinex-defogging.git
+   git clone https://github.com/Delavari-Alireza/Retinex-Laplacian-Defogging
    cd retinex-defogging
    ```
 
