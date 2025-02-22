@@ -5,7 +5,7 @@
 This project implements the **Retinex-Based Laplacian Pyramid Method for Image Defogging** as described in the IEEE paper, "[Retinex-Based Laplacian Pyramid Method for Image Defogging (IEEE Xplore)](https://ieeexplore.ieee.org/document/8796366)". The approach combines multi-scale Retinex techniques with Laplacian pyramid decomposition to enhance and defog images effectively. It simulates the human visual system by correcting non-uniform illumination and integrating local detail enhancements.
 
 ---
-### result of this implemetaion on the images from the paper
+### Example results 
 
 ![Defogging Example](images/results.png)
 
