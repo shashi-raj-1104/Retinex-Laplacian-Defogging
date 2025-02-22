@@ -13,7 +13,7 @@ This project implements the **Retinex-Based Laplacian Pyramid Method for Image D
 
 ### Project Components
 
-- **Main Python Script (`defog.py`):**  
+- **Main Python Script (`retinex_demo.py`):**  
   Implements the complete defogging algorithm:
   - Multi-scale Retinex (MSR)
   - Color Restoration Function (CRF)
@@ -52,7 +52,7 @@ This project implements the **Retinex-Based Laplacian Pyramid Method for Image D
 - **Update** the `image_path` in `retinex_demo.py` to point to your target image.
 - **Execute** the script:
   ```bash
-  python defog.py
+  python retinex_demo.py
   ```
 - The script will process the image, display the result in a new window, and save the enhanced image as `output.png`.
 
