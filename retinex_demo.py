@@ -13,20 +13,20 @@ OFFSET = 25.0
 
 def display_image_in_actual_size(img):
     # dpi = 80
-    #
+    
     # height, width, depth = img.shape
-    #
+    
     # # What size does the figure need to be in inches to fit the image?
     # figsize = width / float(dpi), height / float(dpi)
-    #
+    
     # # Create a figure of the right size with one axes that takes up the full figure
     # fig = plt.figure(figsize=figsize)
     # ax = fig.add_axes([0, 0, 1, 1])
-    #
-    # # Hide spines, ticks, etc.
+    # #
+    # # # Hide spines, ticks, etc.
     # ax.axis('off')
 
-    # Display the image.
+    # # Display the image.
     # ax.imshow(img, cmap='gray')
     cv2.imshow('output', img)
     # plt.show()
@@ -209,7 +209,7 @@ def retinex_based_laplacian_pyramid_defogging(image_path):
 
 
 # image_path = 'E:\ImageDefogging\src hugging face\DehazeFormer_Demo\examples\Screenshot (2).png'
-image_path = r'E:\ImageDefogging\retinex\download.png'
+image_path = r'/content/fog_road.png'
 # display_image_in_actual_size(cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB))
 # display_image_in_actual_size(retinex_based_laplacian_pyramid_defogging(image_path))
 
@@ -219,7 +219,9 @@ image_path = r'E:\ImageDefogging\retinex\download.png'
 
 output = retinex_based_laplacian_pyramid_defogging(image_path)
 # output = cv2.cvtColor(output, cv2.COLOR_RGB2BGR)
-cv2.imshow('output', output)
+# cv2.imshow('output', output)
+from google.colab.patches import cv2_imshow  # Import the function
+cv2_imshow(output) 
 
 result = cv2.normalize(output, dst=None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8U)
 cv2.imwrite('output.png', result)
